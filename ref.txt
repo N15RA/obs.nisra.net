@@ -1,0 +1,4 @@
+https://www.websparrow.org/web/how-to-create-and-save-text-file-in-javascript
+https://gist.github.com/liabru/11263260
+
+https://github.com/eligrey/FileSaver.js/
