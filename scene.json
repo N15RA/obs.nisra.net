@@ -59,8 +59,8 @@
         "versioned_id": "wasapi_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "bye",
-    "current_scene": "Off",
+    "current_program_scene": "On",
+    "current_scene": "On",
     "current_transition": "淡入淡出",
     "groups": [],
     "modules": {
@@ -90,7 +90,7 @@
         },
         "scripts-tool": []
     },
-    "name": "無標題",
+    "name": "123",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -233,12 +233,12 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.background": [],
                 "libobs.hide_scene_item.comment": [],
-                "libobs.hide_scene_item.https://mango.exps.pw/NISRA/index.html?title=Rev%20Android&speaker=halloworld": [],
                 "libobs.hide_scene_item.screen": [],
                 "libobs.hide_scene_item.speaker": [],
+                "libobs.show_scene_item.background": [],
                 "libobs.show_scene_item.comment": [],
-                "libobs.show_scene_item.https://mango.exps.pw/NISRA/index.html?title=Rev%20Android&speaker=halloworld": [],
                 "libobs.show_scene_item.screen": [],
                 "libobs.show_scene_item.speaker": []
             },
@@ -330,7 +330,7 @@
                         "group_item_backup": false,
                         "id": 1,
                         "locked": true,
-                        "name": "https://mango.exps.pw/NISRA/index.html?title=Rev%20Android&speaker=halloworld",
+                        "name": "background",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -395,7 +395,7 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "https://mango.exps.pw/NISRA/index.html?title=Rev%20Android&speaker=halloworld",
+            "name": "background",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -514,8 +514,8 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.byeb": [],
-                "libobs.show_scene_item.byeb": []
+                "libobs.hide_scene_item.text": [],
+                "libobs.show_scene_item.text": []
             },
             "id": "scene",
             "mixers": 0,
@@ -547,7 +547,7 @@
                         "group_item_backup": false,
                         "id": 1,
                         "locked": true,
-                        "name": "byeb",
+                        "name": "text",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -583,7 +583,7 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "byeb",
+            "name": "text",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
