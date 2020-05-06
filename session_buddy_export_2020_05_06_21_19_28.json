@@ -1,0 +1,205 @@
+﻿﻿{
+   "sessions": [
+      {
+         "type": "saved",
+         "name": "2020-5-6",
+         "generated": "2020-05-06T13:18:57.546Z",
+         "created": "2020-05-06T13:19:21.664Z",
+         "modified": "2020-05-06T13:19:21.664Z",
+         "id": 2,
+         "gid": "SYw9C6cFms0ewhi488Zh0sOW1keYVsP0",
+         "windows": [
+            {
+               "alwaysOnTop": false,
+               "focused": true,
+               "height": 1056,
+               "id": 1,
+               "incognito": false,
+               "left": -8,
+               "state": "maximized",
+               "tabs": [
+                  {
+                     "active": false,
+                     "audible": false,
+                     "autoDiscardable": true,
+                     "discarded": false,
+                     "favIconUrl": "https://api.jquery.com/jquery-wp-content/themes/api.jquery.com/i/favicon.ico",
+                     "height": 888,
+                     "highlighted": false,
+                     "id": 5,
+                     "incognito": false,
+                     "index": 0,
+                     "mutedInfo": {
+                        "muted": false
+                     },
+                     "pinned": false,
+                     "selected": false,
+                     "status": "complete",
+                     "title": ".on() | jQuery API Documentation",
+                     "url": "https://api.jquery.com/on/",
+                     "width": 1920,
+                     "windowId": 1
+                  },
+                  {
+                     "active": false,
+                     "audible": false,
+                     "autoDiscardable": true,
+                     "discarded": false,
+                     "favIconUrl": "https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon.ico",
+                     "height": 937,
+                     "highlighted": false,
+                     "id": 6,
+                     "incognito": false,
+                     "index": 1,
+                     "mutedInfo": {
+                        "muted": false
+                     },
+                     "pinned": false,
+                     "selected": false,
+                     "status": "complete",
+                     "title": "Forms · Bootstrap",
+                     "url": "https://getbootstrap.com/docs/4.4/components/forms/",
+                     "width": 1920,
+                     "windowId": 1
+                  },
+                  {
+                     "active": false,
+                     "audible": false,
+                     "autoDiscardable": true,
+                     "discarded": false,
+                     "favIconUrl": "https://www.w3schools.com/favicon.ico",
+                     "height": 937,
+                     "highlighted": false,
+                     "id": 10,
+                     "incognito": false,
+                     "index": 2,
+                     "mutedInfo": {
+                        "muted": false
+                     },
+                     "pinned": false,
+                     "selected": false,
+                     "status": "complete",
+                     "title": "JSON.stringify()",
+                     "url": "https://www.w3schools.com/js/js_json_stringify.asp",
+                     "width": 1920,
+                     "windowId": 1
+                  },
+                  {
+                     "active": false,
+                     "audible": false,
+                     "autoDiscardable": true,
+                     "discarded": false,
+                     "favIconUrl": "https://learn.jquery.com/jquery-wp-content/themes/learn.jquery.com/i/favicon.ico",
+                     "height": 937,
+                     "highlighted": false,
+                     "id": 35,
+                     "incognito": false,
+                     "index": 3,
+                     "mutedInfo": {
+                        "muted": false
+                     },
+                     "pinned": false,
+                     "selected": false,
+                     "status": "complete",
+                     "title": "$( document ).ready() | jQuery Learning Center",
+                     "url": "https://learn.jquery.com/using-jquery-core/document-ready/",
+                     "width": 1920,
+                     "windowId": 1
+                  },
+                  {
+                     "active": false,
+                     "audible": false,
+                     "autoDiscardable": true,
+                     "discarded": false,
+                     "favIconUrl": "https://www.w3schools.com/favicon.ico",
+                     "height": 937,
+                     "highlighted": false,
+                     "id": 36,
+                     "incognito": false,
+                     "index": 4,
+                     "mutedInfo": {
+                        "muted": false
+                     },
+                     "pinned": false,
+                     "selected": false,
+                     "status": "complete",
+                     "title": "jQuery Set Content and Attributes",
+                     "url": "https://www.w3schools.com/jquery/jquery_dom_set.asp",
+                     "width": 1920,
+                     "windowId": 1
+                  },
+                  {
+                     "active": false,
+                     "audible": false,
+                     "autoDiscardable": true,
+                     "discarded": false,
+                     "favIconUrl": "https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico",
+                     "height": 937,
+                     "highlighted": false,
+                     "id": 37,
+                     "incognito": false,
+                     "index": 5,
+                     "mutedInfo": {
+                        "muted": false
+                     },
+                     "pinned": false,
+                     "selected": false,
+                     "status": "complete",
+                     "title": "Cards · Bootstrap",
+                     "url": "https://getbootstrap.com/docs/4.0/components/card/",
+                     "width": 1920,
+                     "windowId": 1
+                  },
+                  {
+                     "active": false,
+                     "audible": false,
+                     "autoDiscardable": true,
+                     "discarded": false,
+                     "favIconUrl": "https://api.jquery.com/jquery-wp-content/themes/api.jquery.com/i/favicon.ico",
+                     "height": 937,
+                     "highlighted": false,
+                     "id": 62,
+                     "incognito": false,
+                     "index": 6,
+                     "mutedInfo": {
+                        "muted": false
+                     },
+                     "pinned": false,
+                     "selected": false,
+                     "status": "complete",
+                     "title": ".find() | jQuery API Documentation",
+                     "url": "https://api.jquery.com/find/",
+                     "width": 1920,
+                     "windowId": 1
+                  },
+                  {
+                     "active": false,
+                     "audible": false,
+                     "autoDiscardable": true,
+                     "discarded": false,
+                     "favIconUrl": "https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=ec617d715196",
+                     "height": 888,
+                     "highlighted": false,
+                     "id": 63,
+                     "incognito": false,
+                     "index": 7,
+                     "mutedInfo": {
+                        "muted": false
+                     },
+                     "pinned": false,
+                     "selected": false,
+                     "status": "complete",
+                     "title": "replace '\\'n in javascript - Stack Overflow",
+                     "url": "https://stackoverflow.com/questions/14072313/replace-n-in-javascript/14072938",
+                     "width": 1920,
+                     "windowId": 1
+                  }
+               ],
+               "top": -8,
+               "type": "normal",
+               "width": 1936
+            }
+         ]
+      }
+   ]
+}

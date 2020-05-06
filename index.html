@@ -3,30 +3,64 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>How to Create and Save text file in JavaScript</title>
-    <script src="js/FileSaver.js"></script>
+    <title>OBS Setting Generator</title>
 
-    <script>
-
-        // function saveStaticDataToFile() {
-        //     var blob = new Blob(["Welcome to Websparrow.org."],
-        //         { type: "text/plain;charset=utf-8" });
-        //     saveAs(blob, "static.txt");
-        // }
-
-        var text = "hello world",
-        blob = new Blob([text], { type: 'text/plain' }),
-        anchor = document.createElement('a');
-        anchor.download = "hello.txt";
-        anchor.href = (window.webkitURL || window.URL).createObjectURL(blob);
-        anchor.dataset.downloadurl = ['text/plain', anchor.download, anchor.href].join(':');
-        anchor.click();
-		
-    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/setting.js"></script>
+    <script src="js/index.js"></script>
 </head>
-<body>
-    <a href="data:application/octet-stream;charset=utf-16le;base64,//5mAG8AbwAgAGIAYQByAAoA">text file</a>
-    <button type="button" onclick="saveStaticDataToFile();">Click to Save</button>
 
+<body>
+<div class="container my-5">
+    <div class="card bg-light">
+    <form class="card-body" id="obsForm">
+        <!-- comment -->
+        <div class="form-group">
+            <label for="cssFormControlTextarea">Comment CSS</label>
+            <textarea class="form-control" id="cssFormControlTextarea" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="commentURLInput">Comment URL</label>
+            <input class="form-control" type="text" id="commentURLInput" placeholder="" value="http://z.fjucpc.tk:8080/messages">
+        </div>
+        <div class="form-inline">
+            <div class="form-group">
+                <label class="my-1 mr-2" for="SlidoInput">Slido</label>
+                <input class="form-control mb-2 mr-sm-2" type="text" id="SlidoInput" placeholder="" value="">
+            </div>
+            <div class="form-group">
+                <label class="my-1 mr-2" for="YoutubeInput">Youtube</label>
+                <input class="form-control mb-2 mr-sm-2" type="text" id="YoutubeInput" placeholder="" value="">
+            </div>
+        </div>
+        <hr>
+        <!-- main bg -->
+        <div class="form-inline">
+            <div class="form-group">
+                <label class="my-1 mr-2" for="titleInput">Title</label>
+                <input class="form-control mb-2 mr-sm-2" type="text" id="titleInput" placeholder="" value="">
+            </div>
+            <div class="form-group">
+                <label class="my-1 mr-2" for="speakerInput">Speaker</label>
+                <input class="form-control mb-2 mr-sm-2" type="text" id="speakerInput" placeholder="" value="">
+            </div>
+        </div>
+        <div class="form-inline">
+            <div class="form-group">
+                <label class="my-1 mr-2" for="OffInput">Off text</label>
+                <input class="form-control mb-2 mr-sm-2" type="text" id="OffInput" placeholder="" value="">
+            </div>
+            <div class="form-group">
+                <label class="my-1 mr-2" for="ByeInput">Bye text</label>
+                <input class="form-control mb-2 mr-sm-2" type="text" id="ByeInput" placeholder="" value="">
+            </div>
+        </div>
+        <button type="submit" id="formSubmitBtn1" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+</div>
 </body>
 </html>
