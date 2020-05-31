@@ -9,10 +9,10 @@ function saveToFile(filename, text)
 }
 
 // getMainBG("title", "speaker")
-const DefaultMainBGURL = "https://mango.exps.pw/NISRA/index.html"
-function getMainBG(title, speaker)
+const DefaultMainBGURL = "https://nisra.exps.pw/"
+function getMainBG(title, speaker, bgColor)
 {
-	return `${DefaultMainBGURL}?title=${encodeURI(title)}&speaker=${encodeURI(speaker)}`
+	return `${DefaultMainBGURL}?title=${encodeURI(title)}&speaker=${encodeURI(speaker)}&bg=${bgColor}`
 }
 
 // getCommentURL("http://z.fjucpc.tk:8080/messages", "slido", "youtube")
@@ -36,7 +36,7 @@ function getCommentURL(url, slido, youtube)
 }
 
 // getTextURL("text")
-const DefaultTextUrl = "https://mango.exps.pw/NISRA/word.html?word="
+const DefaultTextUrl = "https://nisra.exps.pw/word.html?word="
 function getTextURL(text)
 {
 	text = encodeURI(text);
@@ -44,14 +44,15 @@ function getTextURL(text)
 }
 
 function generateSettingFile(commentURL, commentCSS, commentSlido, commentYoutube,
-	title, speaker, offText, byeText)
+	title, speaker, offText, byeText,
+	bgColor)
 {
-	// off text 
+	// off text
 	setting["sources"][1]["settings"]["url"] = getTextURL(offText);
 	// bye text
 	setting["sources"][8]["settings"]["url"] = getTextURL(byeText);
 	// main bg
-	setting["sources"][3]["settings"]["url"] = getMainBG(title, speaker)
+	setting["sources"][3]["settings"]["url"] = getMainBG(title, speaker, bgColor)
 	// comment
 	setting["sources"][6]["settings"]["url"] = getCommentURL(commentURL, commentSlido, commentYoutube);
 	setting["sources"][6]["settings"]["css"] = commentCSS;
@@ -61,7 +62,7 @@ function generateSettingFile(commentURL, commentCSS, commentSlido, commentYoutub
 
 $(document).ready(function() {
 	$("#cssFormControlTextarea").html(
-`body { 
+`body {
   background-color: rgba(0, 0, 0, 0);
   margin: 0px auto;
   overflow: hidden;
@@ -81,7 +82,9 @@ $(document).ready(function() {
 		offText = $("#OffInput").val() || "請修改 Off text";
 		// Bye
 		byeText = $("#ByeInput").val() || "請修改 Bye text";
+		// background color
+		bg = $("input[name=bg]:checked").val();
 
-		generateSettingFile(commentURL, commentCSS, commentSlido, commentYoutube, title, speaker, offText, byeText);
+		generateSettingFile(commentURL, commentCSS, commentSlido, commentYoutube, title, speaker, offText, byeText, bg);
 	});
 });
