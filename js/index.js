@@ -60,19 +60,23 @@ function generateSettingFile(commentURL, commentCSS, commentSlido, commentYoutub
 	saveToFile("obs.json", JSON.stringify(setting));
 }
 
-$(document).ready(function() {
-	$("#cssFormControlTextarea").html(
-`body {
+function getDefaultCommentCSS()
+{
+	return `body {
   background-color: rgba(0, 0, 0, 0);
   margin: 0px auto;
   overflow: hidden;
   font-size: 20px;
-}`);
+}`;
+}
+
+$(document).ready(function() {
+	$("#cssFormControlTextarea").html(getDefaultCommentCSS());
+
 	$("#obsForm").submit(function(event) {
 	  	event.preventDefault();
 		// Comment
 		commentURL = $("#commentURLInput").val();
-		commentCSS = $("#cssFormControlTextarea").val().replace(/\n/g, ' ');
 		commentSlido = $("#SlidoInput").val();
 		commentYoutube = $("#YoutubeInput").val();
 		// Main bg
@@ -84,6 +88,14 @@ $(document).ready(function() {
 		byeText = $("#ByeInput").val() || "請修改 Bye text";
 		// background color
 		bg = $("input[name=bg]:checked").val();
+		// not defalut
+		if($("#cssFormControlTextarea").val() == getDefaultCommentCSS())
+		{
+			if(bg == "white")
+				commentCSS = $("#cssFormControlTextarea").val().replace(/\n/g, ' ').replace(/}/g, 'color: black; }');
+			else if(bg == "black")
+				commentCSS = $("#cssFormControlTextarea").val().replace(/\n/g, ' ').replace(/}/g, 'color: white; }');
+		}
 
 		generateSettingFile(commentURL, commentCSS, commentSlido, commentYoutube, title, speaker, offText, byeText, bg);
 	});
