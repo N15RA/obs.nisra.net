@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                background: #2A2E31;
+                color: #E7FF6E;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            body {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+            footer {
+                position: absolute;
+                right: 3vw;
+                top: 85vh;
+                text-align: right;
+            }
+            #title {
+                position: absolute;
+                left: 5vw;
+                top: 30vh;
+                width: 90vw;
+                height: max-content;
+                font-size: 9em;
+                overflow-wrap: break-word;
+            }
+            #nisra {
+                display: inline-flex;
+                align-items: center;
+                font-size: 3em;
+                font-weight: bold;
+                margin-bottom: 1vh;
+            }
+            #loader {
+                border: 0.5rem solid #E7FF6E;
+                border-top: 0.5rem solid #E7FF6E00;
+                border-radius: 50%;
+                margin-right: 1rem;
+                width: 2rem;
+                height: 2rem;
+                animation: spin 2s linear infinite;
+            }
+            #loadernote {
+                font-size: 1.5em;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+        <script>
+            window.onload = function(){
+                var openingParam = new URL(window.location.href).searchParams.get("opening");
+                var loadernoteParam = new URL(window.location.href).searchParams.get("loadernote");
+
+                document.getElementById("title").innerText = new URL(window.location.href).searchParams.get("title");
+                document.getElementById("loader").style.display = (function(){
+                    if (openingParam == "true") return "";
+                    else return "none";
+                })();
+                document.getElementById("loadernote").innerText = (function(){
+                    if (loadernoteParam != undefined) return loadernoteParam;
+                    else if (openingParam == 'true') return "如果甜甜圈卡住請告知我們 <(_ _)>";
+                    else return "";
+                })();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="title">titleNotFound</div>
+    </body>
+    <footer>
+        <div id="nisra">
+            <div id="loader"></div>
+            #N15RA
+        </div>
+
+        <div id="loadernote"></div>
+    </footer>
+</html>
