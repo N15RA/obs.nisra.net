@@ -90,7 +90,7 @@ setting = {
         },
         "scripts-tool": []
     },
-    "name": "123",
+    "name": "NISRA_2023-11-14",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -128,7 +128,7 @@ setting = {
             "name": "On"
         },
         {
-            "name": "bye"
+            "name": "Bye"
         }
     ],
     "sources": [
@@ -274,14 +274,14 @@ setting = {
                         "locked": true,
                         "name": "screen",
                         "pos": {
-                            "x": 64.0,
-                            "y": 216.0
+                            "x": 58.0,
+                            "y": 180.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.66666668653488159,
-                            "y": 0.74074071645736694
+                            "x": 0.78,
+                            "y": 0.78
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -295,22 +295,22 @@ setting = {
                         "bounds_align": 0,
                         "bounds_type": 0,
                         "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
+                        "crop_left": 96,
+                        "crop_right": 96,
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 2,
                         "locked": true,
                         "name": "speaker",
                         "pos": {
-                            "x": 1392.0,
-                            "y": 712.0
+                            "x": 1613.0,
+                            "y": 773.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.25,
-                            "y": 0.27777779102325439
+                            "x": 0.13,
+                            "y": 0.13
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -361,8 +361,8 @@ setting = {
                         "locked": true,
                         "name": "comment",
                         "pos": {
-                            "x": 1392.0,
-                            "y": 112.0
+                            "x": 1613.0,
+                            "y": 180.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -498,9 +498,9 @@ setting = {
             "push-to-talk-delay": 0,
             "settings": {
                 "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; font-size: 20px;}",
-                "height": 428,
+                "height": 480,
                 "url": "http://comment.nisra.net/?url=http://z.fjucpc.tk:8080/messages&slido=tz1joxgi",
-                "width": 480
+                "width": 250
             },
             "sync": 0,
             "versioned_id": "browser_source",

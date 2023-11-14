@@ -9,10 +9,10 @@ function saveToFile(filename, text)
 }
 
 // getMainBG("title", "speaker")
-const DefaultMainBGURL = "https://nisra.exps.pw/"
+const DefaultMainBGURL = "http://127.0.0.1:5500/video.html" //"https://obs.nisra.net/title.html"
 function getMainBG(title, speaker, bgColor)
 {
-	return `${DefaultMainBGURL}?title=${encodeURI(title)}&speaker=${encodeURI(speaker)}&bg=${bgColor}`
+	return `${DefaultMainBGURL}?title=${encodeURI(title)}&speaker=${encodeURI(speaker)}`
 }
 
 // getCommentURL("http://z.fjucpc.tk:8080/messages", "slido", "youtube")
@@ -36,11 +36,12 @@ function getCommentURL(url, slido, youtube)
 }
 
 // getTextURL("text")
-const DefaultTextUrl = "https://nisra.exps.pw/word.html?word="
-function getTextURL(text)
+const DefaultTextUrl = "http://127.0.0.1:5500/title.html?title="//"https://obs.nisra.net/title.html?title="
+function getTextURL(text, opening)
 {
 	text = encodeURI(text);
-	return `${DefaultTextUrl}${text}`
+	if (opening) return `${DefaultTextUrl}${text}`
+	else return `${DefaultTextUrl}${text}`
 }
 
 function generateSettingFile(commentURL, commentCSS, commentSlido, commentYoutube,
@@ -48,7 +49,7 @@ function generateSettingFile(commentURL, commentCSS, commentSlido, commentYoutub
 	bgColor)
 {
 	// off text
-	setting["sources"][1]["settings"]["url"] = getTextURL(offText);
+	setting["sources"][1]["settings"]["url"] = getTextURL(offText) + "&opening=true";
 	// bye text
 	setting["sources"][8]["settings"]["url"] = getTextURL(byeText);
 	// main bg
