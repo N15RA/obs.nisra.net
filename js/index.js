@@ -9,7 +9,7 @@ function saveToFile(filename, text)
 }
 
 // getMainBG("title", "speaker")
-const DefaultMainBGURL = "http://127.0.0.1:5500/video.html" //"https://obs.nisra.net/title.html"
+const DefaultMainBGURL = "https://obs.nisra.net/video.html"
 function getMainBG(title, speaker, bgColor)
 {
 	return `${DefaultMainBGURL}?title=${encodeURI(title)}&speaker=${encodeURI(speaker)}`
@@ -36,7 +36,7 @@ function getCommentURL(url, slido, youtube)
 }
 
 // getTextURL("text")
-const DefaultTextUrl = "http://127.0.0.1:5500/title.html?title="//"https://obs.nisra.net/title.html?title="
+const DefaultTextUrl = "https://obs.nisra.net/title.html?title="
 function getTextURL(text, opening)
 {
 	text = encodeURI(text);
